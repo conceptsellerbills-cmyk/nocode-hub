@@ -47,17 +47,26 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               </button>
               <div className="cat-dropdown" role="menu">
               <a href="/category/website-builders">🌐 Website Builders</a>
-              <a href="/category/ecommerce">🛒 No-Code E-commerce</a>
-              <a href="/category/automation">⚙️ Workflow Automation</a>
-              <a href="/category/app-builders">📱 App Builders</a>
-              <a href="/category/databases">🗄️ No-Code Databases</a>
-              <a href="/category/design-tools">🎨 Design Tools</a>
-              <a href="/category/analytics">📊 No-Code Analytics</a>
-              <a href="/category/integrations">🔗 Integration Platforms</a>
-              <a href="/category/email-marketing">📧 Email Marketing Tools</a>
-              <a href="/category/ai-nocode">🤖 AI No-Code Tools</a>
-              <a href="/category/payments">💳 No-Code Payments</a>
-              <a href="/category/form-builders">📝 Form Builders</a>
+              <a href="/category/app-makers">📲 App Makers</a>
+              <a href="/category/automation">⚡ Automation</a>
+              <a href="/category/databases">🗄️ Databases</a>
+              <a href="/category/forms">📝 Forms & Surveys</a>
+              <a href="/category/integrations">🔗 Integrations</a>
+              <a href="/category/landing-pages">🚀 Landing Pages</a>
+              <a href="/category/ecommerce">🛒 E-commerce</a>
+              <a href="/category/chatbots">🤖 Chatbot Builders</a>
+              <a href="/category/crm">👥 CRM Tools</a>
+              <a href="/category/mobile-apps">📲 Mobile App Builders</a>
+              <a href="/category/analytics">📊 Analytics & Dashboards</a>
+              <a href="/category/email-marketing">📧 Email Marketing</a>
+              <a href="/category/internal-tools">🛠️ Internal Tools</a>
+              <a href="/category/membership-sites">🔐 Membership Sites</a>
+              <a href="/category/scheduling">📅 Scheduling Tools</a>
+              <a href="/category/project-management">📋 Project Management</a>
+              <a href="/category/social-media">📱 Social Media Tools</a>
+              <a href="/category/workflow-automation">⚡ Workflow Automation</a>
+              <a href="/category/ui-design">🎨 UI Design Tools</a>
+              <a href="/category/ai-tools">🤖 No-Code AI Tools</a>
               </div>
             </nav>
           </div>
