@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import FooterNewsletter from "../components/FooterNewsletter";
 
 const SITE_NAME = "NoCode Tutorials";
 
@@ -105,10 +106,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 </a>
                 <p className="footer-desc">Reviews and comparisons of the best no-code tools — build apps, automate workflows, and launch products without writing code.</p>
                 <p className="footer-nl-label">Newsletter</p>
-                <form className="footer-nl-form" action="/api/subscribe" method="POST">
-                  <input type="email" name="email" placeholder="your@email.com" required />
-                  <button type="submit">Subscribe</button>
-                </form>
+                <FooterNewsletter />
               </div>
 
               {/* Col 2 — Company */}
