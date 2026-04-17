@@ -20,7 +20,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: post.title,
     description: post.description,
     keywords: post.keyword,
-    openGraph: { title: post.title, description: post.description, type: "article" },
+    openGraph: {
+      title: post.title,
+      description: post.description || "",
+      type: "article",
+      url: `https://www.nocode-hub.com/${slug}`,
+      siteName: "No-Code Hub",
+      publishedTime: post.date,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.description || "",
+    },
     alternates: { canonical: `https://www.nocode-hub.com/${slug}` },
   };
 }
@@ -37,9 +49,19 @@ export default async function ArticlePage({ params }: Props) {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: post.title,
-    description: post.description,
-    datePublished: post.date,
-    keywords: post.keyword,
+    description: post.description || "",
+    datePublished: post.date || new Date().toISOString().split("T")[0],
+    dateModified: post.date || new Date().toISOString().split("T")[0],
+    url: `https://www.nocode-hub.com/${slug}`,
+    mainEntityOfPage: { "@type": "WebPage", "@id": `https://www.nocode-hub.com/${slug}` },
+    author: { "@type": "Organization", name: "No-Code Hub", url: "https://www.nocode-hub.com" },
+    publisher: {
+      "@type": "Organization",
+      name: "No-Code Hub",
+      url: "https://www.nocode-hub.com",
+      logo: { "@type": "ImageObject", url: "https://www.nocode-hub.com/logo.png", width: 200, height: 60 }
+    },
+    keywords: post.keyword || "",
   });
 
   return (
