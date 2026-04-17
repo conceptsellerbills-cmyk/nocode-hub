@@ -5,6 +5,7 @@ import NewsletterForm from '../components/NewsletterForm'
 export const metadata: Metadata = {
   title: "No-Code Tutorials, Tools & Guides 2025 — NoCode Tutorials",
   description: "Tutorials and reviews for the best no-code tools: website builders, app makers, automation and databases.",
+  alternates: { canonical: "https://www.nocode-hub.com" },
 };
 
 const STARS = (n: number) => "★".repeat(n) + "☆".repeat(5 - n);
